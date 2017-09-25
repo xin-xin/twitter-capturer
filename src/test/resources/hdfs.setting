@@ -1,0 +1,8 @@
+# HDFS Setting
+
+hdfs.url=hdfs://10.217.172.136:9000
+root.path=/twitter/
+file.ext=.txt
+file.delim=|
+sync.count=100
+max.file.size=5

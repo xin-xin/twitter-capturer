@@ -1,0 +1,4 @@
+# Queue settings:
+streamer.maxColumn=5000
+streamer.startFileNo=0
+streamer.queues=test_queue,stream_redis_SE_
