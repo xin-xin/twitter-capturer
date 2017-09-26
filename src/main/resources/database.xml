@@ -14,7 +14,7 @@
                            http://www.springframework.org/schema/data/repository
        http://www.springframework.org/schema/data/repository/spring-repository.xsd">
 
-	<jpa:repositories base-package="sg.edu.astar.ihpc.scc.common.rdbms" />
+	<jpa:repositories base-package="data.common.rdbms" />
 
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
 		p:entityManagerFactory-ref="entityManagerFactory" />
@@ -22,7 +22,7 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://10.217.172.63/sentimo" />
+		<property name="url" value="jdbc:mysql://10.217.172.63/transport" />
 		<property name="username" value="sentimo" />
 		<property name="password" value="sentimo2014" />
 	</bean>
@@ -40,6 +40,6 @@
 		<property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
 		<!-- spring based scanning for entity classes -->
 		<property name="packagesToScan"
-			value="sg.edu.astar.ihpc.scc.common.domain.rdbms" />
+			value="data.common.domain.rdbms" />
 	</bean>
 </beans>

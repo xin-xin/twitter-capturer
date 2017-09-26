@@ -23,7 +23,7 @@
 		class="org.springframework.context.support.ConversionServiceFactoryBean">
 		<property name="converters">
 			<set>
-				<bean class="sg.edu.astar.ihpc.scc.common.nosql.DateConverter" />
+				<bean class="data.common.nosql.DateConverter" />
 			</set>
 		</property>
 	</bean>
@@ -34,6 +34,6 @@
 
 	<!-- OPTIONAL: If you are using Spring Data Cassandra Repositories, add 
 		your base packages to scan here -->
-	<cassandra:repositories base-package="sg.edu.astar.ihpc.scc.common.nosql.repo" />
+	<cassandra:repositories base-package="data.common.nosql.repo" />
 
 </beans> 
